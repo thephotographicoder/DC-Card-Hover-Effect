@@ -1,0 +1,66 @@
+body{
+  background: #1c1c1c;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.card{
+  position: relative;
+  margin-left: 20px;
+  width: 350px;
+  height: 500px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  background: transparent;
+}
+
+img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s;
+
+}
+
+.info{
+  position: relative;
+  padding: 20px;
+  bottom: -100%;
+  transition: 0.5s;
+}
+
+h2{
+  text-align: center;
+  letter-spacing: 8px;
+  font-weight: 600px;
+}
+
+.card:hover img{
+  height: 60%;
+  border-radius: 20px 20px 0 0 ;
+}
+
+.card:hover .info{
+  bottom: -55%;
+}
